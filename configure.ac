@@ -6,6 +6,7 @@ AC_INIT([HTSlib], [VERSION], [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_USE_SYSTEM_EXTENSIONS
 LT_INIT
+dnl AC_LIBTOOL_WIN32_DLL
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([synced_bcf_reader.c])
 AC_CONFIG_HEADERS([config.h])
@@ -49,7 +50,7 @@ AC_CHECK_LIB([$zlib_name], [$zlib_testfunc])
 
 # Checks for header files.
 
-# Use the following gnulib import statement (limits is not a module):
+# Ran the following gnulib import statement (limits is not a module):
 # gnulib-tool --import alloca arpa_inet fcntl fdatasync getpagesize inttypes netdb stat-size stddef stdint stdlib string sys_select sys_socket sys_stat sys_time unistd recv send
 AC_CHECK_HEADERS([alloca.h arpa/inet.h fcntl.h inttypes.h limits.h \
 netdb.h stddef.h stdint.h stdlib.h string.h sys/select.h sys/socket.h \
