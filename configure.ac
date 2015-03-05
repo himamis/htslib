@@ -4,6 +4,9 @@
 AC_PREREQ([2.67])
 AC_INIT([HTSlib], [VERSION], [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
+AC_USE_SYSTEM_EXTENSIONS
+LT_INIT
+AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([synced_bcf_reader.c])
 AC_CONFIG_HEADERS([config.h])
 
@@ -13,7 +16,6 @@ gl_EARLY
 gl_INIT
 AC_PROG_INSTALL
 AC_PROG_LN_S
-AC_PROG_RANLIB
 AC_PROG_MKDIR_P
 
 # Checks for libraries.
