@@ -43,10 +43,6 @@ cram/zfio.c
 
 libhts_la_CPPFLAGS = -Ihtslib -Icram $(AM_CPPFLAGS)
 
-# HACK: this should change once we make libtool libraries instead;
-# forcing object files that get archived into libgnu.a to be included
-# *directly*. lib/libgnu.a is mentioned to force the dependency to
-# build first. Instead we'll want to use libhts_la_LDFLAGS
 libhts_la_LIBADD = lib/libgnu.la
 libhts_la_LDFLAGS = $(LIBSOCKET) $(LIB_FDATASYNC) -no-undefined
 
