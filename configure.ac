@@ -1,6 +1,8 @@
 # Configure script for htslib, a C library for high-throughput sequencing
 # data formats.
 #
+# The MIT/Expat License
+#
 #    Copyright (C) 2015 Bioconductor
 #
 #    Author: Nathaniel Hayden <nhayden@fredhutch.org>

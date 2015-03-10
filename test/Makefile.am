@@ -1,5 +1,7 @@
 # Makefile.am for htslib tests
 #
+# The MIT/Expat License
+#
 #    Copyright (C) 2015 Bioconductor
 #
 #    Author: Nathaniel Hayden <nhayden@fredhutch.org>
