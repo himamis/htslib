@@ -25,10 +25,11 @@
 # DEALINGS IN THE SOFTWARE.
 
 check_PROGRAMS = fieldarith hfile sam test-regidx test_view \
-		 test-vcf-api test-vcf-sweep
+	test-vcf-api test-vcf-sweep
 
 TESTCPPFLAGS = -I$(top_srcdir)/htslib -I$(top_srcdir)/lib -I$(top_srcdir)/cram
-TESTLDADD = $(top_srcdir)/libhts.la $(top_srcdir)/lib/libgnu.la $(LIBSOCKET) $(LIB_FDATASYNC)
+TESTLDADD = $(top_srcdir)/libhts.la $(top_srcdir)/lib/libgnu.la \
+	$(LIBSOCKET) $(LIB_FDATASYNC)
 
 fieldarith_SOURCES = fieldarith.c
 fieldarith_CPPFLAGS = $(TESTCPPFLAGS)
